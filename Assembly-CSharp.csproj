@@ -36,12 +36,12 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\moveArrow.cs" />
-     <Compile Include="Assets\spawner.cs" />
-     <Compile Include="Assets\ball.cs" />
      <Compile Include="Assets\SpinningPlatform.cs" />
      <Compile Include="Assets\spinningpins.cs" />
+     <Compile Include="Assets\moveArrow.cs" />
      <Compile Include="Assets\ScoringZone.cs" />
+     <Compile Include="Assets\spawner.cs" />
+     <Compile Include="Assets\ball.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.25f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
