@@ -3,8 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class moveArrow : MonoBehaviour
+/**
+*use to move the ball dropper tube back and forth.
+*/
 {
+    // Time taken for a complete back and forth motion of the ball dropper.
     public float period;
+    // The maxium angle the dropper will displace.
     public float maxangle;
     // Start is called before the first frame update
     void Start()

@@ -5,22 +5,25 @@ using UnityEngine.UI;
 
 public class spawner : MonoBehaviour
 {
-	public Transform velocityArrow;
+	//public Transform velocityArrow;
 	public float spawnInterval;
 	public GameObject objectToSpawn;
 	public Text statusText;
 	
+	// Spawns a ball when this float reaches spawn interval
 	private float timeToSpawn;
-	//spawns a ball when this float reaches spawn interval
+	// Indicates wheater or not a ball is ready to be released
 	private bool ballReady;
-	//indicates wheater or not a ball is ready to be released
 	private Image ImageComp;
-	private GameObject spawnedBall; 
 	//a reference to the current ball to be released
+	private GameObject spawnedBall; 
 	
 	
     // Start is called before the first frame update
     void Start()
+	/*
+	Create a ball at the start of the game ready to drop.
+	*/
     {
 		timeToSpawn = 0.0f;
 		ImageComp = GetComponent<Image>();
@@ -35,10 +38,11 @@ public class spawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-		if(!ballReady)
+		if(!ballReady)// Ball not ready, add progresss to next ball spawning
 		{
 			timeToSpawn += Time.deltaTime;
 			setSpawnProgress(timeToSpawn/spawnInterval);
+			// Show how much longer until ball will spawn on UI.
 			statusText.text = (Mathf.Round((spawnInterval - timeToSpawn)*10f)/10f).ToString();
 			statusText.color = new Color(1f-1f*getSpawnProgress(),1f*getSpawnProgress(),0f,1f);
 			if(getSpawnProgress() >= 1.0f)//spawn progess full, spawn a ball

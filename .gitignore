@@ -1,0 +1,4 @@
+#ignore library files
+Libary/
+#ignore temp folder
+temp/
