@@ -17,6 +17,7 @@ inspired by more machinical pachinko machines made before microcomputers when in
 ## TODO:
  - finish the collision zone to add scoring
  - add key for restarting the game
+ - create a simple jazz song
  - main menu screen?
 
 

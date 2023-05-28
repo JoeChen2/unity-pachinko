@@ -4758,7 +4758,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a160f7c42ee01d846ac65b731640a885, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnInterval: 1
+  spawnInterval: 0.5
   objectToSpawn: {fileID: 2179312861256909661, guid: 1f9afcffa8cdd3b4a9e9e2ca22e5c0f9, type: 3}
   statusText: {fileID: 661966004}
 --- !u!1 &1537364608
