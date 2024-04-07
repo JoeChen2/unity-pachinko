@@ -2,7 +2,7 @@
 
 ### **IMPORTANT NOTE: I did not upload the library folder to git but unity should automatically rebuild the folder**
 
-## installing:
+## Installing:
 
 open unity hub then use the add project button to add the project folder.
 you can play the game in the unity editor other wise you will have to export it yourself to your prefered platform. 
@@ -14,10 +14,14 @@ inspired by more machinical pachinko machines made before microcomputers when in
 
 ---
 
-## TODO:
- - finish the collision zone to add scoring
- - add key for restarting the game
- - create a simple jazz song
- - main menu screen?
+## Music
 
 
+Made using renoise:  
+* VST used:  
+    - Arturia Analog Lab
+* Samples:
+    - Yamaha TRBX 107
+    - Arturia Microfreak
+    - a random cajon
+    - finger

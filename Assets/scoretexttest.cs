@@ -5,32 +5,13 @@ using TMPro;
 
 public class scoretexttest : MonoBehaviour
 {
-    // Scores in scorezones
-    private Dictionary<string, int> scoretable;
+    // Total score so far
+    private int totalscore = 0;
 
     // Start is called before the first frame update
     void Start()
     {
-        scoretable = new Dictionary<string, int>(){
-            {"l",0},
-            {"1",0},
-            {"2",0},
-            {"3",0},
-            {"4",0},
-            {"5",0},
-            {"6",0},
-            {"7",0},
-            {"r",0}
-        };
-        // scoretable.Add("L",0);
-        // scoretable.Add("1",0);
-        // scoretable.Add("2",0);
-        // scoretable.Add("3",0);
-        // scoretable.Add("4",0);
-        // scoretable.Add("5",0);
-        // scoretable.Add("6",0);
-        // scoretable.Add("7",0);
-        // scoretable.Add("R",0);
+        
     }
 
     // Update is called once per frame
@@ -39,19 +20,15 @@ public class scoretexttest : MonoBehaviour
         
     }
 
-    public void IncrementValue(string zone)
+    public void IncrementValue(int score)
     {
-        scoretable[zone] += 1;
+        totalscore += score;
         updateScore();
     }
 
     public void updateScore()
     {
-        string scoretext = "";
-        foreach (KeyValuePair<string, int> pair in scoretable)
-        {
-            scoretext = scoretext + string.Format("{0}:{1}\n",pair.Key,pair.Value);
-        }
+        string scoretext = "Current score: " + totalscore.ToString();
         GetComponent<TextMeshProUGUI>().text = scoretext;
     }
 }

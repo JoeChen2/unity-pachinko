@@ -2,3 +2,7 @@
 Library/
 #ignore temp folder
 temp/
+#ignore exports
+exports/
+#ignore logs
+logs/
